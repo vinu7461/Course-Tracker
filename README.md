@@ -1,12 +1,11 @@
-# Course-Tracker
 
 <h1 align="center" style="font-size:35px">
-  <b>Course Monitoring System</b>
+  <b>Course Tracker</b>
 </h1>
 <p align="center">
   This is my construct week project. made with Java, JDBC, and MySQL technology.
   <br/>
-  Check out my <a href="https://sanajitjana.github.io" target="_blank">Portfolio</a>
+  Check out my <a href="https://vinu7461.github.io" target="_blank">Portfolio</a>
 </p>
 
 <p align="center">
@@ -15,11 +14,12 @@
 
 <br/>
 
-<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/76105799/193437482-ca30d43e-4da0-43d2-8123-97941007b6e1.png">
+<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/106326042/205909166-942f1e34-2b1c-42ae-8a48-4fd80148f7ce.png">
+
 
 ## Description
 
-`Course Monitoring Systems` is used to monitor the course in an organization, and helps system administrators monitor their infrastructure.
+`Course Tracker` is used to track the course in an organization, and helps system administrators monitor their infrastructure.
 
 In an educational Institute there are several courses running parallel every day. For every course there are several batches at same/different time. Every course has a session wise/day wise schedule. It will be difficult for the Faculty Head to know the status of every batch i.e what is the session taught at each day in a batch.
 
@@ -27,7 +27,7 @@ So the Automated Course Monitoring System will keep the records of all the cours
 
 ## Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,powershell,git,github)](http://sanajitjana.github.io/)
+[![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,git,github)](http://vinu7461.github.io/)
 
 ## Features
 
@@ -45,12 +45,16 @@ So the Automated Course Monitoring System will keep the records of all the cours
 
 ## Screenshots
 
-![Admin Login](https://user-images.githubusercontent.com/76105799/193438208-c53e6eaa-25d2-4e64-8aa0-cf1ced5ce656.png)
+![Admin Login]
+
+(![Screenshot (931)](https://user-images.githubusercontent.com/106326042/205910875-4b1b49ec-4f16-413e-8504-754ac564ed21.png)
+)
 <br/><br/>
-![Database](https://user-images.githubusercontent.com/76105799/193437820-57921009-d8ce-48b5-a9e3-2511413870ab.png)
 
-## License
+![Database]
+![CT (ER diagram)](https://user-images.githubusercontent.com/106326042/205905610-a0992769-ac9f-4947-bd81-7b40610773dc.png)
 
-This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
+
+
 
 #### Thanks for reading this article ❤️
