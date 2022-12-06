@@ -329,13 +329,15 @@ public class BatchDaoImpl implements BatchDao {
 		                       
 		   while(rs1.next()) {
 			   
+			   
+			   
 			   String batchid=rs1.getString(1);
 			   String coursename=rs1.getString(2);
 			   String facultyname=rs1.getString(3);
 			   int noOfStudents =rs1.getInt(4);
 			   String batchStartDate=rs1.getString(5);
 			   int totalDaysGen=rs1.getInt(6);
-			
+			 
 			   
 			  PreparedStatement ps1=conn.prepareStatement("select count(*)  from faculty inner join batch inner join course inner join courseplan on course.courseid=batch.courseid AND batch.facultyid=faculty.facultyid AND batch.batchid=courseplan.batchid where status=\"completed\" AND batch.batchid=?  group by batch.batchid order by batch.batchid ");
 			  

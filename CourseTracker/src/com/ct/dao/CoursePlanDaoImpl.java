@@ -125,6 +125,41 @@ public class CoursePlanDaoImpl implements CoursePlanDao {
 		
 		return li;
 	}
+
+	@Override
+	public List<CoursePlan> viewAllCoursePlan() {
+		// TODO Auto-generated method stub
+		
+		List<CoursePlan> li =new ArrayList<>();
+		
+		try (Connection conn =DButil.provideConnection()){
+			
+			PreparedStatement ps=conn.prepareStatement("select * from courseplan");
+			
+		ResultSet rs=ps.executeQuery();
+			
+		while(rs.next()) {
+			
+			int planid=rs.getInt(1);;
+			String batchid=rs.getString(2);
+			int day=rs.getInt(3);
+			String topic =rs.getString(4);
+			String status=rs.getString(5);
+			
+			CoursePlan cp=new CoursePlan(planid, batchid, day, topic, status);
+			
+			li.add(cp);
+			
+		}
+			
+			
+		} catch (SQLException e) {
+			// TODO: handle exception
+			System.out.println("Invalid input");
+		}
+		
+		return li;
+	}
 	
 	
 

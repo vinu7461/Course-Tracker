@@ -23,7 +23,8 @@ public class Demo {
     System.out.println("|_______________________________|");
 	
   
-      Demo.home();
+     Demo.home();
+     Demo.end();
 	
 }
 		
@@ -34,7 +35,7 @@ public class Demo {
 		System.out.println("\n");
 		System.out.println("PLEASE SELECT FROM THE FOLLOWING OPTIONS \n ");
 		System.out.println("=========================================");
-		System.out.println("  1  Admin Login");
+		System.out.println("  1. Admin Login");
 	    System.out.println("  2. Faculty Login");
       	System.out.println("  3. Exit The Application");
       	
@@ -58,9 +59,7 @@ public class Demo {
 		   if(id>0) Demo.facultyrole(id);
 		   else home();
 		   
-		case 3:Demo.end();
-			
-			break;
+		case 3: break;
 		default:System.out.println("select from above options");
 		        System.out.println("=========================");
 		        home();
@@ -106,7 +105,7 @@ public class Demo {
 	           switch (x) {
 	           
 	           case 0:Demo.adminrole();
-	            System.out.println("============================================================================");
+//	            System.out.println("============================================================================");
 	            
 					break;	
 	           
@@ -178,7 +177,7 @@ public class Demo {
     		   switch (x) {
     		   
     		   case 0:Demo.adminrole();
-	            System.out.println("============================================================================");
+//	            System.out.println("============================================================================");
 	            
 					break;	
     		   
@@ -219,6 +218,7 @@ public class Demo {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Invalid Input");
+			Demo.batchRelated();
 		}
 		
 	}
@@ -246,7 +246,7 @@ public class Demo {
         	switch (x) {
         	
         	case 0:Demo.adminrole();
-            System.out.println("============================================================================");
+//            System.out.println("============================================================================");
             
 				break;	
         	
@@ -302,7 +302,9 @@ public class Demo {
     		System.out.println("PLEASE SELECT FROM THE FOLLOWING OPTIONS \n ");
     		System.out.println("=========================================");
     		System.out.println(" 1.  Create Course Plan");
-        	System.out.println(" 2.  update Course Plan");
+        	System.out.println(" 2.  Update Course Plan");
+        	System.out.println(" 3.  View all Course Plan");
+        	
         	System.out.println(" 0.  Go Back");
         	
         	String y=sc.next();
@@ -314,7 +316,7 @@ public class Demo {
         	  switch (x) {
         	  
         	  case 0:Demo.adminrole();
-              System.out.println("============================================================================");
+//              System.out.println("============================================================================");
               
   				break;	
         	  
@@ -326,6 +328,10 @@ public class Demo {
   				break;
   				
               case 2:ad.updateCoursePlan();
+              System.out.println("============================================================================");
+              Demo.coursePlanRelated();
+              
+              case 3:ad.viewAllCoursePlan();
               System.out.println("============================================================================");
               Demo.coursePlanRelated();
   		     
@@ -366,7 +372,7 @@ public class Demo {
            	  switch (x) {
            	  
            	case 0:Demo.adminrole();
-            System.out.println("============================================================================");
+//            System.out.println("============================================================================");
             
 				break;	
            	  
@@ -428,7 +434,7 @@ public class Demo {
         	
         	switch (x) {
         	case 0:ad.logout();
-            System.out.println("============================================================================");
+//           System.out.println("============================================================================");
             
 				break;	
 		   
@@ -711,7 +717,7 @@ public class Demo {
 		
 		public static void end() {
 			System.out.println("Thanks for Watching");
-			
+			System.out.println("=============================================================");
 		}
 	
 	

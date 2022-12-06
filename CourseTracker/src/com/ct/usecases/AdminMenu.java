@@ -789,6 +789,8 @@ public void generateReport() {
 	}else {
 		
 for(Batch_Report s :br) {
+	
+	           
 			
 			System.out.println("===========================================");
 			System.out.println("batch id        ->"+" "+ s.getBatchid());
@@ -897,6 +899,46 @@ Scanner sc=new Scanner(System.in);
 		// TODO: handle exception
 		System.out.println("Invalid Input");
 	}
+	
+	
+	
+}
+
+public void viewAllCoursePlan() {
+	// TODO Auto-generated method stub
+	
+	Scanner sc=new Scanner(System.in);
+	
+	  try {
+		  
+		  CoursePlanDao cpd=new CoursePlanDaoImpl();
+		  
+		  List<CoursePlan> cp=cpd.viewAllCoursePlan();
+		  
+		  if(cp.size()==0) {
+			  System.out.println("No Records Found");
+		  }else {
+			  
+			  for(CoursePlan s :cp) {
+					
+					System.out.println("===========================================");
+					System.out.println("plan id    ->"+" "+ s.getPlanId());
+					System.out.println("batch id    ->"+" "+ s.getBatchId());
+					System.out.println("day number   ->"+" "+ s.getDaynumber());
+					System.out.println("topic ->"+" "+ s.getTopic());
+					System.out.println("status  ->"+" "+ s.getStatus());
+					
+					
+				}
+			
+		}
+		  
+		
+	} catch (Exception e) {
+		// TODO: handle exception
+		System.out.println(e.getMessage());
+	}
+	
 	
 	
 	

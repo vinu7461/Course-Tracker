@@ -13,5 +13,7 @@ public interface CoursePlanDao {
 	
 	public List<CoursePlan> viewCourseByFaculty( int id);
 	
+	public List<CoursePlan> viewAllCoursePlan();
+	
 }
 
