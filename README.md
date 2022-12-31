@@ -25,7 +25,7 @@ In an educational Institute there are several courses running parallel every day
 
 So the Automated Course Monitoring System will keep the records of all the courses, batches, faculties and the daywise update for every batch. It will also help the faculty head to maintain the course plan.
 
-## Tech Stack
+## Tech Stack   
 
 [![My Skills](https://skillicons.dev/icons?i=java,spring,mysql,git,github)](http://vinu7461.github.io/)
 
@@ -57,4 +57,4 @@ So the Automated Course Monitoring System will keep the records of all the cours
 
 
 
-#### Thanks for reading this article ❤️
+## Thanks for reading this article ❤️
