@@ -2,7 +2,7 @@
 <h1 align="center" style="font-size:35px">
   <b>Course Tracker</b>
 </h1>
-<p align="center">
+<p align="center"> 
   This is my construct week project. made with Java, JDBC, and MySQL technology.
   <br/>
   Check out my <a href="https://vinu7461.github.io" target="_blank">Portfolio</a>
