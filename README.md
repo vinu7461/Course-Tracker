@@ -1,5 +1,5 @@
 
-<h1 align="center" style="font-size:35px">
+<h1 align="center" style="font-size:35px"> 
   <b>Course Tracker</b> 
 </h1>
 <p align="center"> 
